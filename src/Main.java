@@ -1,15 +1,24 @@
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
+import java.util.ArrayList;
+
 public class Main {
     public static void main(String[] args) {
-        //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
-        // to see how IntelliJ IDEA suggests fixing it.
-        System.out.printf("Hello and welcome!");
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        list.add("World");
+        String s = list.get(0);
+        String s1 = list.get(1);
 
-        for (int i = 1; i <= 5; i++) {
-            //TIP Press <shortcut actionId="Debug"/> to start debugging your code. We have set one <icon src="AllIcons.Debugger.Db_set_breakpoint"/> breakpoint
-            // for you, but you can always add more by pressing <shortcut actionId="ToggleLineBreakpoint"/>.
-            System.out.println("i = " + i);
-        }
+//        String str = (String) list.get(0);
+//        String integer = (String) list.get(1);
+
+//        Box box = new Box();
+//        box.setValue(1);
+//        String i = (String) box.getValue();
+//        System.out.println(i); // java.lang.ClassCastException
+
+        Box<Integer> box = new Box<>(); // Box is now type safe
+        box.setValue(1);
+        int i = box.getValue();
+        System.out.println(i);
     }
 }
