@@ -20,5 +20,18 @@ public class Main {
         box.setValue(1);
         int i = box.getValue();
         System.out.println(i);
+
+        Pair<String, Integer> pair = new Pair<>("Age", 30);
+        System.out.println(pair.getKey());
+        System.out.println(pair.getValue());
+
+        /**
+         * Naming convention
+         * T: Type
+         * E: Element (used in collections)
+         * K: Key (used in maps)
+         * V: Value (used in maps)
+         * N: Number
+         */
     }
 }

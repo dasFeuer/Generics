@@ -7,6 +7,7 @@
 ///
 /// The syntax for a generic type is:
 public class Box<T> {
+//    public class Box<T extends Number>
     /// one or more type parameters
 /// These type parameters are placeholders that are replaced with specific types when the class is instantiated.
 
