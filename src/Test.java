@@ -58,5 +58,12 @@ public class Test{
         MyNumber myNumber = new MyNumber(11);
         theBox<MyNumber> box = new theBox<>(myNumber);
         box.display();
+
+        // Enum
+        Day day = Day.WEDNESDAY;
     }
+}
+
+enum Day{
+    SUNDAY, MONDAY, TUESDAY, WEDNESDAY, THRUSDAY, FRIDAY, SATURDAY
 }
